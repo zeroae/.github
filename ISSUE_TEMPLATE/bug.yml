@@ -1,0 +1,40 @@
+name: Bug Report
+description: Report a bug or unexpected behavior
+title: "🐛 "
+type: Bug
+labels: []
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What happened? What did you expect to happen?
+      placeholder: |
+        When I do X, Y happens.
+        I expected Z to happen instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: Minimal steps to reproduce the behavior
+      placeholder: |
+        1. Set up...
+        2. Run...
+        3. Observe...
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Version, OS, runtime, or other relevant environment details
+      placeholder: |
+        - Version:
+        - OS:
+        - Runtime:
+    validations:
+      required: false

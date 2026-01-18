@@ -1,0 +1,43 @@
+name: Theme
+description: A strategic initiative spanning multiple epics and milestones
+title: "🎨 "
+type: Theme
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Themes are high-level strategic goals. Use GitHub's sub-issues to link Epics to this Theme.
+
+  - type: textarea
+    id: vision
+    attributes:
+      label: Vision
+      description: What future state are we working toward?
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: Why is this important? What's the business or user value?
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What areas/components does this theme touch?
+    validations:
+      required: false
+
+  - type: input
+    id: timeframe
+    attributes:
+      label: Timeframe
+      description: Expected duration (e.g., Q1 2025, H1 2025)
+      placeholder: "Q1 2025"
+    validations:
+      required: false

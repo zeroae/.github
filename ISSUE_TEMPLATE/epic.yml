@@ -1,0 +1,50 @@
+name: Epic
+description: A major feature or initiative spanning multiple issues
+title: "🎯 "
+type: Epic
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use GitHub's sub-issues feature to link child issues to this Epic.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What is this Epic about? Why does it matter?
+    validations:
+      required: true
+
+  - type: textarea
+    id: goals
+    attributes:
+      label: Goals
+      description: What will be true when this Epic is complete?
+      placeholder: |
+        1. Users can...
+        2. System supports...
+        3. Documentation covers...
+    validations:
+      required: true
+
+  - type: textarea
+    id: success-criteria
+    attributes:
+      label: Success Criteria
+      description: How do we know this Epic is done?
+      placeholder: |
+        - [ ] All sub-issues closed
+        - [ ] Documentation updated
+        - [ ] Feature tested in production
+    validations:
+      required: true
+
+  - type: textarea
+    id: out-of-scope
+    attributes:
+      label: Out of Scope
+      description: What is explicitly NOT part of this Epic?
+    validations:
+      required: false
