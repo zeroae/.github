@@ -26,6 +26,19 @@ Theme          Strategic initiative (quarterly/multi-quarter)
     └── Issue  Feature, bug, or task
 ```
 
+**How GitHub maps to Agile/SAFe concepts:**
+
+| GitHub Concept | Agile Equivalent | Scope | Example |
+|----------------|------------------|-------|---------|
+| Issue type: Theme | Initiative | Quarters/Year | "Enterprise Readiness" |
+| Issue type: Epic | Epic | 1 milestone | "Audit Logging" |
+| Issue type: Feature | Story | Days-weeks | "CLI audit command" |
+| Issue type: Bug/Task | Task | Hours-days | "Fix token overflow" |
+| Sub-issues | Subtasks | Hours | "Write tests" |
+| Milestone | Release | Time-boxed | v1.2.0 |
+| Project | Roadmap / Kanban | Cross-cutting | "2025 Roadmap" |
+| Labels | Categories | Cross-cutting | `area/api`, `priority/high` |
+
 **Guidelines:**
 - **Themes** span multiple milestones and contain Epics as sub-issues
 - **Epics** belong to ONE milestone and contain issues as sub-issues

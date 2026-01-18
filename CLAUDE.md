@@ -29,6 +29,26 @@ Milestones           →  Releases (version-based, time-boxed)
 - **Sub-issues** = use GitHub's native sub-issues to link the hierarchy
 - **GitHub Projects** = optional, for roadmap visualization across themes
 
+**Example hierarchy:**
+
+```
+Theme: "Enterprise Readiness"                    ← Strategic goal
+├── Epic: "Permission Boundaries"                ← Fits in v1.2.0 milestone
+│   ├── Feature: Add --permission-boundary flag
+│   ├── Feature: Add --role-name-format flag
+│   └── Task: Enterprise deployment docs
+├── Epic: "Audit Logging"                        ← Fits in v1.2.0 milestone
+│   ├── Feature: Audit event schema
+│   └── Feature: CLI audit command
+└── Epic: "SSO Integration"                      ← Fits in v1.3.0 milestone
+    └── ...
+
+Milestone: v1.2.0                                ← Time-boxed release
+├── Epic: Permission Boundaries (from Theme above)
+├── Epic: Audit Logging (from Theme above)
+└── Bug: Fix token overflow                      ← Standalone, no Epic
+```
+
 ## Issue Templates
 
 Organization-wide templates (repos can override with their own):
